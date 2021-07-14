@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1C1427;
+    margin: auto;
+}
+
+/*        HEADER         */
+
+header {
+    height: 50px;
+    background-color: #40394A;
+}
+.div-header {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem;
+}
+.buscador-header {
+    width: 15rem;
+    height: 1.5rem;
+    justify-content: flex-end;
+    border: 1px solid #CCFFBD;
+    border-radius: 3px;
+    color: #CCFFBD;
+    background-color: #40394A;
+}
+.logo-header,
+.buscador-header,
+.dropdown {
+    margin: auto;
+}
+.logo-header {
+    display: flex;
+    justify-content: end;
+}
+
+
+/*         TITULO ULT RESEÑA         */
+.div-h2 {
+    max-width: 1000px;
+    margin: auto;
+}
+.ultimas-reseñas {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #FAF4F4;
+}
+
+
+
+/*                   CARDS PELICULAS                                */     
+.container-card {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.film {
+    width: 237.5px;
+    height: 380px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #40394A;
+    margin: 1rem;
+}
+.film img {
+    width: 100%;;
+    height: 310px;   
+}
+.film:hover img {
+    width: 100%;;
+    height: 310px;
+    border-radius: 5px;
+    -webkit-transform:scale(1.1);
+    transform:scaleX(1.1);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.film h3 {
+    color: #FAF4F4;
+    margin: 0 auto;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+.p-good,
+.p-reg,
+.p-bad {
+    color: #FAF4F4;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+
+/*                NOTAS APROBADAS             */
+.p-good {
+    color: #B3E283;
+    font-size: 1.5rem;
+}
+
+/*                NOTAS REGULARES             */
+.p-reg {
+    color: #E8E46E;
+    font-size: 1.5rem;
+}
+
+/*                NOTAS MALAS             */
+
+.p-bad {
+    color: #E99497;
+    font-size: 1.5rem;
+}
+
+
+
+/*          CONTAINER TOP RESEÑAS        */
+.container-top-reseñas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+ /*          FOOTER           */
+
+
+ footer {
+    background-color: #40394A;
+    margin-top: 2rem;
+}
+.footer-div {
+    max-width: 1000px;
+    height: 10rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr;
+    font-weight: 800;
+}
+.footer-div a {
+    text-decoration: none;
+    color: #1C1427;
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+    /*            HEADER Y NAV RESPONSIVE      */
+    .div-header {
+        grid-template-columns: 1fr 1fr;
+    }
+    .buscador-header {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+/*           ULTIMA PELICULA VISTA     */
+
+.ultima-peli {
+    margin: auto;
+    max-width: 650px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    }
+.ultima-peli:hover img {
+    display: none;
+}
+.point {
+    display: none;
+}
+.point-responsive {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #FAF4F4;
+}
+
+
+
+
+
+/*                   CARDS PELICULAS                                */     
+.container-card {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*            FOOTER RESPONSIVE              */
+
+    .footer-div {
+        max-width: 1000px;
+        height: 7rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-weight: 800;
+    }
+    .footer-contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contact a {
+        margin: 0.2rem;
+    }
+}

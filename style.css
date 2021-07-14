@@ -1,0 +1,70 @@
+.container-ult-reseña {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-ult {
+    width: 1000px;
+    height: 679px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #40394A;
+    margin: 1rem;
+}
+.film-ult img {
+    width: 100%;;
+    height: 449px;   
+}
+.film-ult:hover img {
+    width: 100%;;
+    height: 449px;
+    border-radius: 5px;
+    -webkit-transform:scale(1.1);
+    transform:scaleX(1.1);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.film-ult h3 {
+    color: #FAF4F4;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.sinopsis {
+    color: #FAF4F4;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+
+
+@media (max-width: 950px) {
+/*      ULT RESEÑA RESPONSIVE      */
+.container-ult-reseña {
+    margin: 0 auto;
+}
+.film-ult {
+    width: 85%;
+    height: 679px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #40394A;
+    margin: 1rem;
+}
+.sinopsis {
+    color: #FAF4F4;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+
+.film-ult:hover img {
+    display: none;
+}
+
+}
