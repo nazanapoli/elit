@@ -19,11 +19,8 @@
 }
 .film-ult:hover img {
     width: 100%;;
-    height: 449px;
     border-radius: 5px;
-    -webkit-transform:scale(1.1);
-    transform:scaleX(1.1);
-    transition: 0.7s;
+    filter: saturate(180%);
     cursor: pointer;
 }
 .film-ult h3 {
@@ -38,6 +35,37 @@
     color: #FAF4F4;
     font-size: 1.5rem;
     padding: 0.5rem;
+}
+
+
+
+/*                           TOP 3 RESEÑAS                           */
+.top-3 {
+    margin: 1rem;
+}
+#card-puntuacion {
+    width: 1000px;
+    height: 560px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#card-puntuacion img {
+    height: 100%;
+}
+#card-puntuacion:hover img {
+    filter: saturate(180%);
+    cursor: pointer;
+}
+
+.card-img-overlay {
+    background-color: rgba(64, 57, 74, 0.7);
+    height: 30%;
+    width: 70%;
+    border-left: #7ECA9C solid 6px;
+    top: 397px;
+    right: 50%;
 }
 
 
@@ -64,7 +92,44 @@
 
 
 .film-ult:hover img {
+    transform: none;
+}
+
+
+#card-puntuacion {
+    width: 85%;
+    height: 560px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#card-puntuacion:hover img {
     display: none;
+}
+
+.card-img-overlay {
+    background-color: rgba(64, 57, 74, 0.7);
+    height: 30%;
+    width: 100%;
+    top: 397px;
+    right: 50%;
+    padding: 0.2rem;
+}
+.card-title,
+.card-text {
+    font-size: 1rem;
+    margin: auto;
+    max-height: 75px;
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 3px;
+}
+.p-good,
+.p-reg,
+.p-bad {
+    margin: 3px;
 }
 
 }

@@ -1,3 +1,15 @@
+.film {
+    height: 360px;
+}
+.film h3 {
+    font-size: 1rem;
+}
+.p-good,
+.p-reg,
+.p-bad {
+    font-size: 1.1rem
+}
+
 @media (max-width: 950px) {
 /*                   CARDS PELICULAS                                */     
 .container-card {
