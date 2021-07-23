@@ -12,7 +12,7 @@ body {
 /*        HEADER         */
 
 header {
-    height: 50px;
+    height: 56px;
     background-color: #40394A;
 }
 .div-header {
@@ -24,9 +24,11 @@ header {
     padding: 0.5rem;
 }
 .buscador-header {
-    width: 15rem;
-    height: 1.5rem;
-    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
     border: none;
     border-radius: 3px;
     color: #FAF4F4;
@@ -35,12 +37,29 @@ header {
 .buscador-header::placeholder {
     color: #FAF4F4;
 }
-.logo-header,
-.buscador-header,
-.dropdown {
-    margin: auto;
+.nombre-pag {
+    width: 95px;
+    height: 40px;
+    font-size: 40px;
+    color: #f4fafa;
+    font-weight: bold oblique;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ECA9C;
+    border-radius: 5%;
+}
+.nombre-pag:hover {
+    background-color: #5f9775;
+    color: #f4fafa;
 }
 .logo-header {
+    display: flex;
+    justify-content: start;
+}
+.dropdown {
+    margin: auto;
     display: flex;
     justify-content: end;
 }
@@ -152,8 +171,6 @@ header {
     font-size: 1.5rem;
 }
 
-
-
 /*          CONTAINER TOP RESEÑAS        */
 .container-top-reseñas {
     display: flex;
@@ -165,8 +182,6 @@ header {
 .container-top-reseñas .film {
     margin-top: 1rem;
 }
-
-
 
 
  /*          FOOTER           */
@@ -207,6 +222,7 @@ header {
 /*            HEADER Y NAV RESPONSIVE      */
 .div-header {
     grid-template-columns: 1fr 1fr;
+    width: 85%;
 }
 
 .buscador-header {

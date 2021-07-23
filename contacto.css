@@ -1,0 +1,89 @@
+.wrap {
+    background-color: #40394A;
+}
+.title-contacto {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 130px;
+    color: #fafafa;
+    font-style: oblique;
+    font-weight: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.form-contacto {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.form-header {
+    background-color: #1C1427;
+    max-width: 500px;
+    color: #fafafa;
+    display: flex;
+    justify-content: start;
+    margin: 1rem 0 1rem 0;
+}
+.form-contacto label {
+    color: #f4fafa;
+}
+.form-contacto input {
+    height: 50px;
+}
+#nombre,
+#mail,
+#text-area {
+    max-width: 500px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+.form-btn {
+    margin: 0.5rem 0 0.7rem 0;
+    width: 130px;
+    height: 35px;
+    border: none;
+    border-radius: 130px;
+    background-color: #40394A;
+    color: #70687c;
+}
+.form-btn:hover {
+    border-radius: 3px;
+    transition-duration: 1s;
+    color: #f4fafa;
+}
+
+
+@media (max-width: 950px) {
+
+.title-contacto {
+    margin: 0 auto;
+    max-width: 85%;
+    height: 130px;
+}
+
+.form-contacto {
+    margin: 0 auto;
+    width: 85%;
+
+}
+.form-btn {
+    margin: 0.5rem 0 0.7rem 0;
+    width: 130px;
+    height: 35px;
+    border: none;
+    border-radius: 130px;
+    background-color: #40394A;
+    color: #f4fafa;
+}
+.form-btn:hover {
+    border-radius: 130px;
+    transition-duration: none;
+    color: #f4fafa;
+}
+
+}
